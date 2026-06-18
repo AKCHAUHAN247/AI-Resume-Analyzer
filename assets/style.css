@@ -1,0 +1,174 @@
+/* ==========================================================
+   GLOBAL APP
+========================================================== */
+
+.stApp{
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:#F8FAFC;
+}
+
+p{
+    color:#CBD5E1;
+}
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+section[data-testid="stSidebar"]{
+
+    background:#111827;
+
+    border-right:1px solid rgba(255,255,255,.05);
+
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.stButton>button{
+
+    width:100%;
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    height:55px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.stButton>button:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ==========================================================
+   FILE UPLOADER
+========================================================== */
+
+[data-testid="stFileUploader"]{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+    padding:10px;
+
+}
+
+/* ==========================================================
+   TEXT AREA
+========================================================== */
+
+.stTextArea textarea{
+
+    background:#111827 !important;
+
+    color:#F8FAFC !important;
+
+    border-radius:12px !important;
+
+    border:1px solid rgba(255,255,255,.08) !important;
+
+    font-size:14px !important;
+
+    line-height:1.6 !important;
+
+}
+
+/* ==========================================================
+   METRIC CARDS
+========================================================== */
+
+div[data-testid="stMetric"]{
+
+    background:#111827;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================================
+   SUCCESS / WARNING / ERROR
+========================================================== */
+
+[data-testid="stAlert"]{
+
+    border-radius:12px;
+
+}
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#334155;
+
+}
+
+/* ==========================================================
+   DOWNLOAD BUTTON
+========================================================== */
+
+.stDownloadButton>button{
+
+    width:100%;
+
+    border-radius:12px;
+
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#475569;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#64748B;
+
+}
