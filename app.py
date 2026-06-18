@@ -20,6 +20,50 @@ st.set_page_config(
     layout="wide"
 )
 
+# ======================================
+# Sidebar
+# ======================================
+
+with st.sidebar:
+
+    st.image(
+        "https://img.icons8.com/fluency/96/artificial-intelligence.png",
+        width=80
+    )
+
+    st.markdown("""
+    # 🤖 ResumeAI Pro
+
+    ### Build stronger resumes.
+    Land better careers..
+
+    Upload your resume, compare it with any job description,
+    optimize it using AI, generate a cover letter,
+    prepare for interviews and impress recruiters.
+
+    """)
+
+    st.divider()
+
+    st.markdown("### 🚀 Features")
+
+    st.markdown("""
+- ATS Resume Scanner
+- Resume Rewriter
+- AI Cover Letter
+- Interview Coach
+- Recruiter Dashboard
+- Skill Radar
+- Resume Comparison
+- PDF Export
+""")
+
+    st.divider()
+
+    st.info("🧠 ResumeAI Intelligence™")
+
+    st.success("🚀 Early Access v1.0")
+
 # -----------------------------
 # Load CSS
 # -----------------------------
@@ -29,8 +73,11 @@ with open("assets/style.css") as f:
 # -----------------------------
 # Header
 # -----------------------------
-st.title("🤖 AI Resume Analyzer Pro")
-st.caption("Built with Gemini AI | ATS Resume Scanner | AI Career Assistant")
+st.title("🚀 ResumeAI Pro")
+
+st.caption(
+    "Your AI Career Companion • ATS Optimization • Resume Intelligence • Interview Success"
+)
 
 st.divider()
 
@@ -56,17 +103,17 @@ st.divider()
 # -----------------------------
 # Analyze
 # -----------------------------
-if st.button("🚀 Analyze Resume", use_container_width=True):
+if st.button("🚀 Analyze with ResumeAI", use_container_width=True):
 
     if uploaded_resume is None:
-        st.warning("Please upload your resume.")
+        st.warning("📄 Please upload your resume to continue.")
         st.stop()
 
     if job_description.strip() == "":
-        st.warning("Please paste the Job Description.")
+        st.warning("💼 Please paste the job description to begin analysis.")
         st.stop()
 
-    with st.spinner("🤖 Gemini is analyzing your resume..."):
+    with st.spinner("🧠 ResumeAI Intelligence™ is analyzing your resume..."):
 
         resume_text = extract_text_from_pdf(uploaded_resume)
 
