@@ -526,7 +526,6 @@ https://resumeai-pro.streamlit.app/
 
 ### 📂 GitHub Repository
 
-> Replace this with your repository link after pushing:
 
 ```
 https://github.com/AKCHAUHAN247/AI-Resume-Analyzer
